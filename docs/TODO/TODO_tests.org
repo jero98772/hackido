@@ -1,0 +1,9 @@
+* pruebas o tests por hacer
+** resumidamente cada funcion
+*** que conecte con la base de datos
+*** verifique si el usuario esta disponible 
+*** verificar que si halla texto en la contraseña (V/T si hay un campo vacio en el registro no deja acceder)
+**** tambien esta prueba puede verificar si almaceno al usuario
+*** que solamnete si se escribio la misma contraseña pueda registrarse(V/T si no son igulaes saca el error 2)
+*** que tenga una cantidad minima de caracteres en este caso 6 (V/T si cumple la regla de 6 saca error 2)
+*** que la contraseña incluya simbolos , numeros , letras y si no tiene no se puede registrar (V/T comprobado texto,simbolos y numeros )

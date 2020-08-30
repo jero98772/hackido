@@ -1,0 +1,4 @@
+* verificaciones 
+** verificar que el correo exista
+** DONE y que no este registrado el email 
+** verificar que si halla texto en la contraseña

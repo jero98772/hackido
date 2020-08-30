@@ -1,0 +1,124 @@
+* la idea es que llege encriptados los datos y cuando llegen al usuario se desencripten
+** como el usuario para crear una tabla de acuerdo al hash 
+** en la tabla para registrar el nombre de usuario 
+*** si se nesesita preguntar si esta disponible es mejor que este desencriptado
+**** depronto se puede verificando un hash que consida
+* nombres de las bases de datos
+** user
+*** username
+*** email
+** database<usuario>
+*** para password y usuarios tiene colomnuas llamadas
+**** password
+**** usuario
+* comandos para inicialisar la base de datos
+** CREATE TABLE "user" (username TEXT , email TEXT , password TEXT , birthday TEXT) ;
+* campos o cosas a ingresar en la tabla del usuario
+** dias
+*** dias sin ingresar cosas a la plataforma
+**** sirve para tener un registro de dias no para ponerse a llenar cosas desde que se empeso ni para llenar datos de un dia(s) que pueden ser confusos y pueden ser muchos datos para llenar , no es para desatrasarse   tambien sirve para conocer el  plaso que han ocurrido las experiencias
+*** dias desde que empeso a sentir bulling  hasta que probo la plataforma
+**** sirve para llevar un registro de los dias , no es para desatrasarse   tambien sirve para conocer el  plaso que han ocurrido las experiencias
+** sentimientos
+*** estres
+*** Tristeza
+*** depresión 
+*** ansiedad
+*** miedo
+*** Fobia
+*** Llanto frecuente
+*** Sentimientos de inferioridad 
+*** ira
+*** agresividad
+*** ideación suicida
+*** Alegria 
+*** felicidad
+*** emoción
+*** Amor
+*** odio
+*** paz interior
+*** armonia
+*** intranquilidad
+*** Amargado
+*** engreido
+*** desconocimiento
+*** conocimiento
+*** incomprension
+*** compresnion
+*** extraño
+*** timidez
+*** impulsivo
+*** aislarse
+*** preocupado
+*** aislado
+*** soledad
+*** respeto ¿a quien y porque?
+*** responsabilidad ¿con que y por que?
+*** disgusto
+*** sueño
+*** intmidado
+*** agresion
+*** respecto a intimidacion,agrsiones,aislamiento  debe ser tenido muy encuenta ,esto se puede enfocar en 
+**** el que se presentara es: preocupacion ¿porque? y preguntar si hay algo como que lo haga sentir intimidado,agredido o se siente aislado o quiere aislaerse    
+**** ansioso ¿porque?
+**** miedo ¿porque?
+** experiencias
+*** tipo de experiencia
+*** la experiencia
+*** con que se cree que empezo esto
+*** fecha de la experiencia predeterminado / ese momento
+** datos del usuario
+*** fecha nacimiento (tambien puede servir para recuperar la cuenta)
+*** nombre de usuario
+*** email
+*** contaseña (para encriptarla)
+** NOTA Respecto a almacenar sentimientos
+*** puede ser una columna por sentimiento  pueden ser 6 y otras para la valoracion de los sentimientos que sesea 
+** saber actores para indetificar una solucion sin decir que la victima diga que es una victima(auto proclamrse victima) 
+*** te insultaron  V/F - cuantas personas - puedes identificar o describir a esa o esas personas ? tambien se podria poner identifacar con las personas que se sintio muy mal 
+*** insultastes a alguien V/F - cuantas personas - que le dijistes ¿porque?
+*** habia alguien cerca V/F - adultos o niños o adultos y niños
+* cantidad de sus tablas y sus columnas
+** tabla dedicada al usuario
+*** tiempo experiencia como la parte que dice dias
+***  dias sin ingresar cosas a la plataforma
+**** sirve para tener un registro de dias no para ponerse a llenar cosas desde que se empezo ni para llenar datos de un dia(s) que pueden ser confusos y pueden ser muchos datos para llenar , no es para desatrasarse   tambien sirve para conocer el  plaso que han ocurrido las experiencias
+*** dias desde que empezo a sentir bulling  hasta que probo la plataforma
+**** sirve para llevar un registro de los dias , no es para desatrasarse   tambien sirve para conocer el  plazo que han ocurrido las experiencias
+*** tipo de experiencia --> buena ,mala
+**** para llegar al problema 
+*** la experiencia fue de forma --> modalidad --> virtual , presencial
+**** para identificar como sucede
+*** cosas importantes que ocurrieron --> que ocurrio --> te regalaron algo , te pegaron ,insultaron , compartistes con alguien, compartistes  algo , hablastes con alguien , se burlaron, otra
+**** que pasa
+*** la experiencia --> que sucedio en sus palabras
+**** sirve para identificar cosas que a muchas veces no son tan evidentes
+*** lugar de la experiencia --> recreo , aula de clases ,baño, rectoria, entre clases , en una clase especifica , calle , metro o tren 
+**** sirve para dar una idea de lo que se puede hacer 
+*** con que se cree que empezo esto --> que dio inicio a la situacion --> un golpe , un insulto , halago, algo que dijo
+**** sirve para saber como evitar las cosas en algunos casos
+*** fecha de la experiencia predeterminado / ese momento --> año,mes,dia (la idea es poner el dia que es cuando se ingresa en automatico y si no es ese dia el usuario lo cambia ) hora o  si fue en la mañana o tarde
+**** sirve para dejar registro y que luego no se eviten cosas 
+*** el sentimiento
+**** seria bueno poner un limite en poner sentiminetos para ver la importancia de como se siente
+*** la valoracion a ese sentimiento
+**** una valoracion por sentimiento
+*** preocupacion ¿porque?
+****  preguntar si hay algo como que lo haga sentir intimidado,agredido o se siente aislado o quiere aislaerse 
+*** 6 sentimientos 
+*** 6 valoarciones de 0 a 5
+*** 6 sentimientos aleatorios 
+*** 6 valoraciones a los  6 sentimientos aleatorios  valoarcion de 0 a 5
+*** recivistes un insulto V/F cuentas veces ,quien    
+*** insultastes V/F cuentas veces , quien
+*** habia alguien mas V/F , niños o/y adultos 
+** con perosnas
+** datos usuario
+*** fecha nacimiento (tambien puede servir para recuperar la cuenta y calcular real)
+*** nombre de usuario (para que pueda acceder a su cuenta)(el nombre real se pone cuando se haga un reporte  por que un nombre de usuario puede ser el nombre de cualquiera)
+*** email (para recuperar la cuenta o que le llegen algunos mensajes/notificaciones )
+*** contaseña (para encriptarla y permitir el acceso solo al usuario)
+** tambien se pueden poner multiples tablas como 
+*** userFeels - userSentimientos
+*** userExp
+*** userOthers

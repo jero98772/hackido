@@ -1,0 +1,8 @@
+* cifrar  y proteger el intecambio de informacion
+** para que se nesita proteger la informacion
+*** se necesita proteger la informacion para que no se preste para un mal uso
+** 
+* referencias de apoyo 
+** anontwi de psy 
+*** https://anontwi.03c8.net/
+*** https://github.com/epsylon/anontwi
