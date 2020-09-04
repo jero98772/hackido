@@ -1,0 +1,48 @@
+<!--
+hackido - 2020 - por jero98772
+hackido - 2020 - by jero98772
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/generalstyles.css')}}">
+	<title>
+		hackido
+	</title>
+</head>
+<body>
+	<div class="bar">
+		<a href="/informar.html"><b>informar</b></a>
+		<a href="/analisis.html"><b>analisar</b></a>
+	</div>
+	<br>
+	<br>
+	<!--el codigo que se se ingrese detro la pag esta debajo entre block content-->
+		{% block content %}
+		{% endblock %}
+	<!--aqui empiesa de nuevo el coidigo del tamplate-->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="endbar" height="100" width="100">
+		<marquee>
+			<p>
+				codigo fuente/donaciones
+			</p>
+		</marquee>
+		<marquee>
+			<a href="https://github.com/jero98772/hackido" height="100" width="100">
+				<img src="https://img.pngio.com/github-logo-icon-of-glyph-style-available-in-svg-png-eps-ai-github-icon-png-256_256.png" height="100" width="100">
+			</a>
+			<a href="donacionbtc.html" height="100" width="100">
+				<img src="https://bitcoin.org/img/icons/opengraph.png?1584741964" height="100" width="100">
+			</a>
+		</marquee>
+	</div>
+</body>
+</html>

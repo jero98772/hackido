@@ -1,0 +1,51 @@
+* implementaciones o cosas que deberia tener esto
+** informar y analisar
+*** los datos de que se informan son con los que se generara un analisis como la grafica
+*** ver si hay palabras ofencivas dentro y mostrarla
+*** resaltar los sentimientos con un color diferente
+*** ver que personas son las que afectan o se ven inbolucradas en estos casos (puede que se cree una grafica para esto )
+*** como ocurren las experiencias si se notan muy agresivas o como en desventajas etc..
+*** conclusion
+*** graficar
+**** personas --> como no se y no se ve tan nesario si se busca solucionar el problema ... es nesesario si se busca a alguien
+**** lugares --> para poder evitar ir a ese lugar
+**** sentimientos
+**** palabras ofencivas
+*** resaltar
+**** palabras ofencivas
+**** sentimientos (poner una definicion de esos sentimientos)
+**** lugares
+** juegos/simulaciones
+*** una idea es de hackido es buscar estartegias frete a la situacion
+*** para eso sitiaciones que impliquen un insulto en un alerta o input ... no hay presuspuesto para añadir un correo para enviar y recibir reaciones (conseguir comida no es gratis :-( y un dominio cuesta) 
+*** tipos de simulaciones 
+*** cyberbulling es mejor es mejor en este caso (por que esto es virtual y no es el mundo fisico )
+**** se puede ver una respuesta 
+**** a que responde 
+**** un procedimiento
+**** un paso a paso 
+**** a quien responde o pide ayuda
+**** que esribio en la respuesta
+**** palabras usadas en la respuesta
+*** bulling es mas como responder y buscar un buen porcedimiento
+**** porcedimento
+**** respuest a las personas
+***** adulto
+***** docente
+***** compañeros
+**** el paso a paso
+**** a quien responde o pide ayuda
+**** palabras usudas en la respuesta
+*** una es para definir sentimintos y hacer mas claro lo que pasa
+** identificar intenciones
+*** preguntar al creador de este repo si me peremite añadirlo a este proyecto
+*** https://github.com/joshimiloni/Cyber-Bullying-Detection
+*** joshimiloni@gmail.com
+** cominicacion
+*** "niveles" para avansar en jerarquia cada 15 dias subir de profesor de clase a director de grupo encargado de area 
+*** comunicacion con los docentes desde el correo del usuario enviado como se siente  los analisis etc... y explicando la situacion
+*** los mail  al usuario (si lo permite ) enviarle una frases (no nesesaria mente motivadoras con reflexiones como "esto pasa y pasara" ,"le puede pasar a cualquiera NO eres tu ") que puede ayudar a entender la situacion
+** archivos
+***  como imgenes graficas analisando lo que siente el usuario puede ser de tipo poligono
+**** la idea es que en un extremo este lo que consideramos "malo" y en la mitad esta lo "bueno" 
+*** un documento para enviarle al profesor

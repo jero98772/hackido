@@ -3,3 +3,4 @@
 *** 1 - el usuario/email ya fue o fueron registrados , puede que ya estes registrado o vuelve a intentar con otro
 *** 2 - la contraseña que ingreso no es segura por favor prube una con simbolos letras y nuemros y que tenga minimo 6 caracteres
 *** 3 - Error 3 no te puedes registrar si los campos requeridos estan vacios
+*** 4 - Error 4 la contraseña que ingreso no es valida vuelve a intentar

@@ -1,0 +1,10 @@
+* notas desarrollo
+** notas respecto a variables
+*** en la funcion hay29feb
+*** 	4 por que cada 4 años ahy 29 febrero y se hiso el caculo que el año 0 es biciesto ... al menos eso  
+*** en la fucnion genpassword
+***  16 es el tamaño que del blocke 
+**** 16 para tener un cantidad por que no itere mas de hay y para que no sobre pase
+**** el numero aleatorio ... para poder confundir
+**** el intervalo entre 32 y 126 es para trasformar el num aleatorio en un caracter
+*** en

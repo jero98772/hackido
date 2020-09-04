@@ -112,6 +112,7 @@
 *** recivistes un insulto V/F cuentas veces ,quien    
 *** insultastes V/F cuentas veces , quien
 *** habia alguien mas V/F , niños o/y adultos 
+*** ultimo acceso
 ** con perosnas
 ** datos usuario
 *** fecha nacimiento (tambien puede servir para recuperar la cuenta y calcular real)

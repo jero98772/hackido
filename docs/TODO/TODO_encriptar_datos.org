@@ -1,8 +1,17 @@
 * cifrar  y proteger el intecambio de informacion
 ** para que se nesita proteger la informacion
 *** se necesita proteger la informacion para que no se preste para un mal uso
-** 
+** es mejor poner un menu de varias paginas como  
+*** escribir sentimientos , experiencias y otros
+*** ver que escribio
+*** cyberbulling
+**** juegos -> para detectar el cyber bulling
+**** detectar intenciones en los mensajes -> https://github.com/joshimiloni/Cyber-Bullying-Detection
+*** manuales , tecnicas y recomendaciones 
+*** configuraciones
 * referencias de apoyo 
 ** anontwi de psy 
 *** https://anontwi.03c8.net/
 *** https://github.com/epsylon/anontwi
+** AES 256 encryption/decryption using pycrypto library
+*** https://www.quickprogrammingtips.com/python/aes-256-encryption-and-decryption-in-python.html este funciona bien 

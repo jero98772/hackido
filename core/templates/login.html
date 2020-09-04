@@ -8,11 +8,10 @@ hackido - 2020 - by jero98772
 	<title>hackido</title>
 </head>
 <body>
-	{% set problemaUsuario = "Error 1 el usuario/email ya fue o fueron registrados , puede que ya estes registrado o vuelve a intentar con otro" %}
-	{% set problemaPassword = "Error 2 la contraseña que ingreso no es segura por favor prube una con simbolos letras y nuemros y que tenga minimo 6 caracteres y que concidan/sean iguales " %}
+	{% set problemaPassword = "Error 4 la contraseña que ingreso no es valida vuelve a intentar" %}
 	{% set problemaVacio = "Error 3 no te puedes registrar si los campos requeridos estan vacios" %}
 	{% set registroOk = "su registro se completo exitosamente" %}
-	<form  method="post">
+	<form method="post">
 		<center>
 			<br>
 			<br>
@@ -33,48 +32,29 @@ hackido - 2020 - by jero98772
 					</h2>
 				</p>
 				<input type="text" name="userName" required>
-				<p style="background-color:Tomato;">
-					{% if problemaUsuario == mensaje %}
-						{{ mensaje }}
-					{% endif %}
-				</p>
-				<p>
-					<h2>
-						correo electrico (email)
-					</h2>
-				</p>
-				<input type="text" name="email" required>
-				<p>
-					<h2>
-						fecha de nacimiento 
-					</h2>
-				</p>
-				<input type="date" name="diaNacimiento" required>
 				<p>
 					<h2>
 						Contraseña
 					</h2> 
 				</p>
 				<input type="password" name="password" required>
-				<p>
-					<h2>
-						repita Contraseña 
-					</h2>
-				</p>
-				<input type="password" name="validacionPassword" required>
 				<p style="background-color:Tomato;">
 					{% if problemaPassword == mensaje %}
 						{{ mensaje }}
+						<a href="/preregistro.html"> recuperar contraseña [trabanjando en ello /mientras te redirecionara a preregistro gracias por su comprencion]</a>
 					{% endif %}
 				</p>
 				<p>
-					recuerde ingresar (simbolos,letras, nuemros) y que tenga minimo 6 caracteres
+					cuando pongas todo has click en login
 				</p>
-				<input type="submit" value="registrarse">
+				<input type="submit" value="login">
 				<p style="background-color:DodgerBlue;">
 					{% if registroOk == mensaje %}
 						{{ mensaje }}
 					{% endif %}
+				</p>
+				<p>
+					<a href="/registrarse.html">crear cuenta</a>
 				</p>
 			</div>
 		</center>

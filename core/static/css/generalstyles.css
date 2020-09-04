@@ -1,0 +1,45 @@
+/*
+hackido - 2020 - por jero98772
+hackido - 2020 - by jero98772
+*/
+* {
+	font-size: 25px;
+}
+body {
+	background-color:rgb(135,0,255) ;
+}
+.bar {
+	overflow: hidden;
+	background-color: rgb(135,0,255);
+	position: fixed;
+	top: 0;
+	width: 100%; 
+	}
+.bar a {
+	float: left;
+	display: block;
+	color: rgb(0,255,64);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+.bar a:hover {
+	background: rgb(64,0,255);
+	color: black;
+	}
+.endbar{
+	position: fixed;
+		bottom: 0;
+		width: 100%;
+
+}
+.endbar p {
+	color: rgb(0,255,64);
+}
+.greentext{
+	color: rgb(0,255,64);
+}
+.shadowtext{
+	-webkit-text-stroke: 1px black;
+	color: rgb(0,255,64); 
+}
