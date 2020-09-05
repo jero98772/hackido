@@ -67,8 +67,6 @@ def generatePassword():
 		else:
 			break
 	return genPassowrd
-def testing(item):
-	print("\n",5*"---",str(item),"---"*5,"\n")
 def fechaStr2Arr(fecha):
 	fechaArr = []
 	tmp = ""

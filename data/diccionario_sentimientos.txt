@@ -107,6 +107,8 @@ horror
 horrorisado
 horrorisada
 miedo
+gordo
+gorda
 panico
 paniciado
 paniciada
@@ -131,3 +133,16 @@ bravo
 brava
 agredido
 agredida
+pereza
+aperezado
+aperezada
+peresoso
+peresosa
+perezoso
+perezosa
+aperesado
+aperesada
+peresa
+cansado
+cansada
+cansacio

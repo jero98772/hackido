@@ -8,7 +8,7 @@ hackido - 2020 - by jero98772
 	<title>hackido</title>
 </head>
 <body>
-	{% set problemaPassword = "Error 4 la contraseña que ingreso no es valida vuelve a intentar" %}
+	{% set problemaPassword = "Error 4 la contraseña o el nombre de usuario que ingreso no es valida vuelve a intentar" %}
 	{% set problemaVacio = "Error 3 no te puedes registrar si los campos requeridos estan vacios" %}
 	{% set registroOk = "su registro se completo exitosamente" %}
 	<form method="post">
@@ -41,7 +41,10 @@ hackido - 2020 - by jero98772
 				<p style="background-color:Tomato;">
 					{% if problemaPassword == mensaje %}
 						{{ mensaje }}
-						<a href="/preregistro.html"> recuperar contraseña [trabanjando en ello /mientras te redirecionara a preregistro gracias por su comprencion]</a>
+						<a href="/preregistro.html"> 
+							recuperar contraseña 
+						</a>
+							[trabanjando en ello /mientras te redirecionara a preregistro gracias por su comprencion]
 					{% endif %}
 				</p>
 				<p>

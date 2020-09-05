@@ -49,9 +49,12 @@ class dbInteracion():
 		self.dbcomand =  "SELECT username FROM user Where username =  ? "
 		self.cursor.execute(self.dbcomand,self.userTuple)
 		self.userHash = self.cursor.fetchall()
-		if self.userHash[0] == self.userTuple :
-			return True
-		else :
+		try:
+			if self.userHash[0] == self.userTuple :
+				return True
+			else :
+				return False
+		except:
 			return False
 	def findPassword(self,password):
 		self.password = str(password)
@@ -59,9 +62,12 @@ class dbInteracion():
 		self.dbcomand =  "SELECT password FROM user Where password =  ? "
 		self.cursor.execute(self.dbcomand,self.passwordTulple)
 		self.passwordHash = self.cursor.fetchall()
-		if  self.passwordHash[0] == self.passwordTulple:
-			return True
-		else :
+		try:
+			if  self.passwordHash[0] == self.passwordTulple:
+				return True
+			else :
+				return False
+		except:
 			return False
 	def closeDB(self):
 		self.cursor.close()

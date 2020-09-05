@@ -4,16 +4,152 @@
 hackido - 2020 - por jero98772
 hackido - 2020 - by jero98772
 -->
-<center>
-	<h1 class="shadowtext">
-		hola cuentame como te sientes en tu dia
-	</h1>
-	<table style="width:90%">
-		<tr>
-			<th></th>
-			<th></th>
-			<th></th>
-		</tr>
-	</table>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/calificacionStyle.css')}}">
+<form method="post">
+	{% set CantidadSentimientos =  rndFeels|length %}
+	<center>
+		<h1 class="shadowtext">
+			hola cuentame como te sientes en tu dia
+		</h1>
+		<br>
+		<br>
+		<table style="width:80%" border="1">
+			<tr>
+				<th colspan="{{ CantidadSentimientos }}">
+					<p class="shadowtext">
+						Ayudame a identificar como te sientes.
+					Califca estos sentimientos de 0 a 5
+					</p>
+					<a href="#calificar" class="greentext">
+						(si quieres saber como , o los parametros haz click ) 
+					</a>
+				</th>
+			</tr>
+			</tr>
+				<th colspan="{{ CantidadSentimientos }}">
+					<p class="shadowtext" >
+						califica el sentimeinto escogido
+					</p>
+				</th>
+			<tr>
+			<tr>
+				{% for feel in range(CantidadSentimientos) %}
+				<th>
+					<p class="shadowtext">
+						<select style="width: 80%;">
+							{% for feel in options %}
+								<option>
+								{{ feel }}
+								</option>
+							{% endfor  %}
+						</select>
+					</p>
+				</th>
+				{% endfor  %}
+			</tr>
+			<tr>
+				{% for feel in range(CantidadSentimientos) %}
+				<th>
+					<input type="text" style="width: 80%;" name="">
+				</th>
+				{% endfor  %}
+			</tr>
+				<th colspan="{{ CantidadSentimientos }}">
+					<p class="shadowtext">
+						califica el sentimeinto aleatorio 
+					</p>
+				</th>
+			<tr>
+				{% for feel in rndFeels %}
+				<th>
+					<p class="shadowtext">
+						{{ feel }}
+					</p>
+				</th>
+				{% endfor  %}
+			</tr>
+			<tr>
+				{% for feel in range(CantidadSentimientos) %}
+				<th>
+					<input type="text" style="width: 80%;;">
+				</th>
+				{% endfor  %}
+			</tr>
+		</table>
+		<a name="calificar"></a>
+		<br>
+		<br>
+		<table style="width:90%" border="1">
+			<tr>
+				<th class="greentext"> calificacion</th>
+				<th class="greentext" colspan="{{ rndFeels|length }}">
+					<h1>
+						como calificar tus sentimentos 
+					</h1>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<div class="calificacion0">
+						0
+					</div>
+				</th>
+				<th class="greentext">
+					no te identficas en ese sentimiento o no lo sientes
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<div class="calificacion1">
+						1
+					</div>
+				</th>
+				<th class="greentext">
+					lo sientes muy pocas veces o casi nunca
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<div class="calificacion2">
+						2
+					</div>
+				</th>
+				<th class="greentext">
+					lo sientes pocas veces pero esta presente
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<div class="calificacion3">
+						3
+					</div>
+				</th>
+				<th class="greentext">
+					lo sientes la mitad del tiempo
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<div class="calificacion4">
+						4
+					</div>
+				</th>
+				<th class="greentext">
+					lo sientes la mayoria del tiempo o por mucho tiempo
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<div class="calificacion5">
+						5
+					</div>
+				</th>
+				<th class="greentext">
+					lo sientes todo el tiempo o por lo menos la mayoria del dia a dia
+				</th>
+			</tr>
+		</table>
+
+	</form>	
 </center>
 {% endblock %}

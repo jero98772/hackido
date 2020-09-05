@@ -8,3 +8,7 @@
 **** el numero aleatorio ... para poder confundir
 **** el intervalo entre 32 y 126 es para trasformar el num aleatorio en un caracter
 *** en
+** respecto a los difernetes archivos de sentimientos
+*** se nesesita uno para resaltar los sentimientos en un texto 
+*** otro para comunicar los sentimientos no se nesita y seria mucho mas trabajo y mas problematico decir apersado y no peresa, es mejor el nombre de esos tipos de sentimientos que los difentes tipo  
+*** en caso de una grafica no seria muy parctico y no muy exacto poner pereza, apresado,peresozo , es mejor poner peresa entre otros  

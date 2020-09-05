@@ -5,11 +5,21 @@ hackido - 2020 - por jero98772
 hackido - 2020 - by jero98772
 """
 from flask import Flask, render_template, request, flash, redirect ,session
-from .webUtils import mismaContraseña , minCaracteresPass , contraseñaSegura , camposVacios , esCorreo , generatePassword,testing
+from .webUtils import mismaContraseña , minCaracteresPass , contraseñaSegura , camposVacios , esCorreo , generatePassword
 from .dbInteracion import dbInteracion
 from .cryptotools import enPassowrdStrHex , enPassowrdHashHex ,enPassowrdStr , enPassowrdHash ,encryptAES ,decryptAES
+from .sentimientos import feelings
 app = Flask(__name__)
 app.secret_key =  str(enPassowrdHash(generatePassword()))
+class webpageapp():
+	def informar():
+		feels = feelings("data/ogrganisado_sentimientos.txt")
+		allFeelsinTxt = feels.feelsIntxt()
+		feelOpcion =  feels.opcionFeels()
+		feelsArr = feels.rndChouseFeels(6)
+		feelsName = feelings("data/diccionario_sentimientos.txt")
+		#if request.method == 'POST':
+		return render_template("/informar.html",options = feelOpcion,rndFeels= feelsArr)
 class webpage():
 	@app.route("/")
 	def index():
@@ -24,10 +34,11 @@ class webpage():
 #======================= aplicaion web =========================#
 	@app.route("/informar.html" , methods=['GET','POST'])
 	def informar():
-		if not session.get('loged'):
-			return render_template("/login.html")
+		mensajeErr = ""
+		if session.get('loged'):
+			return webpageapp.informar()
 		else:
-			return render_template("/informar.html")
+			return render_template("/login.html",mensaje = mensajeErr)
 #========================== Registro ===========================#
 	@app.route("/registrarse.html",methods=['GET','POST'])
 	def registrarse():
@@ -82,10 +93,7 @@ class webpage():
 				session['user'] = userName
 				return redirect("/informar.html")
 			else:
-				print(userName,password)
-				print(enPassowrdStrHex(userName),enPassowrdStrHex(password))
 				mensajeErr = problemaPassword
-				flash(mensajeErr)
-				print(mensajeErr)
+				return render_template("/login.html",mensaje = mensajeErr)
 			db.closeDB()
-		return webpage.informar()
+		return webpage.informar() 
